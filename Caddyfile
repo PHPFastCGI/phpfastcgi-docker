@@ -1,0 +1,11 @@
+0.0.0.0
+
+# Start PHP application listening for FastCGI requests
+startup /usr/bin/php /srv/command.php run --port=9000 --host=localhost &
+
+# Tell caddy to forward requests of FastCGI to PHP app
+fastcgi / localhost:9000
+
+# Set logging to stdout
+log stdout
+errors stdout

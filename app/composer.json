@@ -1,0 +1,5 @@
+{
+    "require": {
+        "phpfastcgi/fastcgi-daemon": "^0.8.0"
+    }
+}
